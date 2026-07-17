@@ -192,12 +192,13 @@ Many Approval Records
 - Finance does not query production tables for business decisions. It relies on published events and references (e.g., completed deliverables, approved invoices).
 
 # Entity Attributes 
-Entity	Identity	Owns	Publishes
-Employee	UUID	Attendance, Leave	EmployeeActivated, EmployeeDeactivated
-Client	UUID	Brands	ClientCreated
-Brand	UUID	Campaigns	BrandUpdated
-Campaign	UUID	Projects	CampaignArchived
-Project	UUID	Work Items	ProjectCreated, ProjectArchived
-WorkItem	UUID	Assignments, Workflow State	WorkAssigned, WorkCompleted
-Deliverable	UUID	Versions, Assets	DeliverableApproved
-Assignment	UUID	—	AssignmentAccepted, AssignmentReassigned
+| Entity | Identity | Owns | Publishes |
+| ------ | ------ | ------ | ------ | 
+| Employee | UUID | Attendance, Leave | EmployeeActivated, EmployeeDeactivated |
+| Client | UUID | Brands | ClientCreated |
+| Brand | UUID | Campaigns | BrandUpdated |
+| Campaign | UUID | Projects | CampaignArchived |
+| Project | UUID | Work Items | ProjectCreated, ProjectArchived |
+| WorkItem | UUID | Assignments, Workflow State | WorkAssigned, WorkCompleted |
+| Deliverable | UUID |Versions, Assets | DeliverableApproved |
+| Assignment | UUID | — | AssignmentAccepted, AssignmentReassigned |
